@@ -14,11 +14,11 @@ jobs:
       - name: install unzip 
         run: sudo apt-get install unzip
       - name: Download model
-        run: wget -O catdog-model.zip 'https://firebasestorage.googleapis.com/v0/b/catdog-22f65.appspot.com/o/catdog-model.zip?alt=media&token=245e7e61-cf7c-4523-9d3b-600d0c70d7ab'
+        run: wget -O bernardoerick-model.zip 'https://firebasestorage.googleapis.com/v0/b/bernardoerick-d5615.appspot.com/o/bernardoerick-model.zip?alt=media&token=b45802e0-cb43-4787-ac8a-78eabf0eb6a3'
       - name: extract model
-        run: unzip catdog-model.zip
+        run: unzip bernardoerick-model.zip
       - name: show dir
-        run: ls -la catdog-model
+        run: ls -la bernardoerick-model
       - name: docker login
         env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
