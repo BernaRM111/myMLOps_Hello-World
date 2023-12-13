@@ -14,7 +14,7 @@ jobs:
       - name: install unzip 
         run: sudo apt-get install unzip
       - name: Download model
-        run: wget -O bernardoerick-model.zip 'https://firebasestorage.googleapis.com/v0/b/bernardoerick-d5615.appspot.com/o/bernardoerick-model.zip?alt=media&token=b33132f4-e171-464a-8082-888470b1891d'
+        run: wget -O bernardoerick-model.zip 'https://firebasestorage.googleapis.com/v0/b/bernardoerick-d5615.appspot.com/o/bernardoerick-model.zip?alt=media&token=faf7cabc-9d7b-47e3-8523-a4fb4f51bf4f'
       - name: extract model
         run: unzip bernardoerick-model.zip
       - name: show dir
