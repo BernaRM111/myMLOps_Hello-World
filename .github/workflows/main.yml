@@ -14,11 +14,11 @@ jobs:
       - name: install unzip 
         run: sudo apt-get install unzip
       - name: Download model
-        run: wget -O bernardoerick-model.zip 'https://firebasestorage.googleapis.com/v0/b/final-faaa9.appspot.com/o/bernardoerick-model.zip?alt=media&token=03ff9182-a14e-4825-abc3-84f50b644fd2'
+        run: wget -O final-model.zip 'https://firebasestorage.googleapis.com/v0/b/final-faaa9.appspot.com/o/final-model.zip?alt=media&token=8e286256-9539-4eef-8147-a116a73c8f0c'
       - name: extract model
-        run: unzip bernardoerick-model.zip
+        run: unzip final-model.zip
       - name: show dir
-        run: ls -la bernardoerick-model
+        run: ls -la final-model
       - name: docker login
         env:
           DOCKER_USER: ${{secrets.DOCKER_USER}}
